@@ -3,27 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lyft</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">		
 </head>
 <body>
+	<!-- Header -->
 	<header>
 	<nav id="navegador" class="flex-container">
-		<img src="assets/img/logo-white.png" alt="Logo White">
+		<img src="assets/img/logo-white.png" class="logo" id="logo-white" alt="Logo White">
+		<img src="assets/img/logo-pink.png" class="logo hide" id="logo-pink" alt="Logo White">
 		<a href="#" class="estilo-a">Drive </a>		
 		<a href="#" class="estilo-a">Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 		<a href="#" class="estilo-a">Help</a>	
-		<a href="#" id="nav-especial" class="estilo-a">Log in</a>	
+		<a href="#" id="log-in" class="estilo-a nav-especial">Log in</a>	
 		<a href="#" id="a-hide" class="estilo-a nav-hide">Sign up</a>					
 	</nav>
 	</header>
+
+	<!-- Article, Video y SIGN UP -->
 	<article id="article-video" class="flex-container">
 		<video id="video-background" autoplay preload muted>
  			<source src="assets/img/hero-video.mp4" type='video/mp4'/>
 		</video>
 		<div id="mascara"></div>
-
+		<div id="el-sign-up" class="sign-up">
+			<div class="titulo-sign-up">
+				<h1>TURN MILES<br> INTO MONEY</h1>
+				<p>SIGN UP TO DRIVE WITH LYFT.</p>
+			</div>			
+			<input type="text" placeholder="Phone Number">
+			<div class="btn-sign-up">
+				<a href="#" class="btn-drive">Become a Driver</a>
+				<a href="#" class="btn-ride">Sign Up to Ride</a>
+			</div>	
+			<div class="text-sign-up">
+				<p>Already applied? <a href="#">Check the status of your application here.</a></p>
+				<p>Earn money for inviting friends to drive. <a href="#">Learn more</a></p>
+			</div>
+			
+		</div>
 	</article>	
+
+	<!-- Section ride -->	
 	<section id="ride">
 		
 	</section>

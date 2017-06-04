@@ -32,10 +32,15 @@ body {
 	margin-right: 40px;
 }
 
-#navegador img{
+.logo{
 	width: 60px;
 	margin-right: auto;
 	padding-left: 80px;
+	overflow: hidden;
+}
+
+.hide{
+	display: none;
 }
 
 .estilo-a{
@@ -44,9 +49,10 @@ body {
 	text-decoration: none;
 	color: white;
 	font-size: 1.2em;
+	margin-left: 10px;
 }
 
-.estilo-a#nav-especial{
+.estilo-a.nav-especial{
 	padding: 10px 20px;
 	border: 1px solid white;
 	border-radius: 10%;
@@ -77,17 +83,31 @@ body {
     background-color: white;		
 }
 
-.menu-dos a:hover{
-	color: white;
-}
-
 .color-a{
 	display: inline-block;
 	padding: 20px 40px;
 	text-decoration: none;
-	font-size: 1.2em;	
 	color: #3F3F3F;
+	font-size: 1.2em;
+	margin-left: 10px;
 }
+
+.nav-especial-scroll{
+	padding: 10px 20px;
+	border: 1px solid #3F3F3F;
+	border-radius: 10%;
+}
+
+.estilo-a-scroll{
+	border: 1px solid #ff00bf;
+	padding: 10px 20px;
+	color: #ff00bf;
+	border-radius: 10%;
+	margin-right: 15px;
+}
+
+
+
 
 /*------- ARTICLE VIDEO -------*/
 
@@ -111,6 +131,104 @@ body {
     background: linear-gradient(rgba(127,0,127,0),rgb(127,0,127));
     position: absolute;
     top: 520px;
+}
+
+/*------- SIGN UP -------*/
+
+#article-video.flex-container{
+	flex-direction: row-reverse;
+}
+
+
+.sign-up{
+	background-color: white;
+	width: 400px;
+	height: 300px;
+    position: absolute;
+    margin: 0;
+    top: 150px;
+    padding: 60px 65px;
+	justify-content: flex-end;
+}
+
+.titulo-sign-up h1{
+	font-size: 50px;
+	color: #241471;
+	font-weight: 700;
+	line-height: 0.9;
+	position: relative;
+	bottom: 50px;
+}
+
+.titulo-sign-up p{
+	font-size: 15px;
+	color: #241471;
+	font-weight: 300;
+	position: relative;
+	bottom: 80px;
+}
+
+
+.sign-up input{
+	width: 400px;
+	height: 20px;
+	margin: 0 0 30px 0;
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    border-bottom: 0.5px solid #241471;
+    position: relative;
+	bottom: 60px;
+}
+
+.sign-up input:focus {
+	outline: 0;
+    box-shadow: none;
+   	border-bottom: 3px solid rgb(127,0,127);
+   	opacity: 0.5;	
+}
+
+ [placeholder="Phone Number"]{
+	opacity: 0.4;
+	font-size: 1.2em;
+}
+
+.btn-sign-up{
+	margin: 10px 0;
+}
+
+.btn-drive{
+	color: white;
+	padding: 15px;
+	background-color: #FC00B5;
+	text-decoration: none;
+	font-size: 1.1em;
+	border-radius: 10px;
+	font-weight: 300;
+	position: relative;
+	bottom: 50px;	
+}
+
+.btn-ride{
+	margin: 0 20px;
+	position: relative;
+	bottom: 50px;	
+	font-weight: 300;
+	color: #7F7F7F;
+}
+
+.text-sign-up{
+	font-size: 0.65em;
+	font-weight: 300;
+	color: #7F7F7F;
+	position: relative;
+	bottom: 30px;
+}
+
+.text-sign-up a{
+	color: #FC00B5;
+	text-decoration: none;
 }
 
 /*------- SECTION RIDE -------*/
