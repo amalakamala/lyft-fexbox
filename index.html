@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lyft</title>
+	<link rel="icon" href="assets/img/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">		
 </head>
@@ -32,9 +33,12 @@
 				<h1>TURN MILES<br> INTO MONEY</h1>
 				<p>SIGN UP TO DRIVE WITH LYFT.</p>
 			</div>			
-			<input type="text" placeholder="Phone Number">
+			<input type="text" id="phone" class="formulario" placeholder="Phone Number"><span id="error1" class="error"></span>
+			<input type="text" id="name" class="formulario hide " placeholder="Name"><span id="error1" class="error"></span>
+			<input type="text" id="email" class="formulario hide" placeholder="Email"><span id="error1" class="error"></span>
+			<input type="text" id="city" class="formulario hide" placeholder="City"><span id="error1" class="error hide"><img src="assets/img/error.png" alt=""></span>
 			<div class="btn-sign-up">
-				<a href="#" class="btn-drive">Become a Driver</a>
+				<a href="#" id="btn-click" class="btn-drive">Become a Driver</a>
 				<a href="#" class="btn-ride">Sign Up to Ride</a>
 			</div>	
 			<div class="text-sign-up">
@@ -66,7 +70,42 @@
 		</div>
 	</section>
 
+	<!-- WATCH -->
+	<section id="watch" class="flex-container">
+		<div class="amplifly-ride">
+			<h5>WATCH</h5>
+			<h1>AMPLIFY YOUR RIDE</h1>
+			<p>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+		</div>
+		<div>
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/fLSmUWOYpKw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
 
+	<!-- WATCH JUNE -->
+	<section id="watch-june" class="flex-container">
+		<div class="video-june radius-circle pos-a">
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/v8nyGzOLsdw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="june">
+			<h5>WATCH</h5>
+			<h1>JUNE</h1>
+			<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride — and sharing her life, too.</p>
+		</div>
+	</section>
+
+	<!-- ROUND UP -->
+	<section id="round-up" class="flex-container">
+		<div class="learn-more">
+			<a href="#"><h5>LEARN MORE</h5></a>
+			<h1>ROUND UP & DONATE</h1>
+			<p>Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable cause of your choice.</p>
+		</div>
+		<video id="video-round-up" autoplay preload muted>
+ 			<source src="assets/img/round-up-and-donate.mp4" type='video/mp4'/>
+		</video>
+	</section>
+	
 	<!-- FOOTER -->
 	<footer>
 		<div id="pre-footer" class="flex-container">
@@ -118,10 +157,7 @@
 			<div class="footer derechos flex-container">
 				<p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Lyft, Inc.   <a href="">Terms</a> <a href="">Privacy</a></p>
 			</div>
-			
-
 		</div>
-
 	</footer>
 	
 	<script src="https://use.fontawesome.com/4154d90246.js"></script>

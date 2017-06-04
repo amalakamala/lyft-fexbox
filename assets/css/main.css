@@ -23,7 +23,6 @@ body {
 	padding-right: 40px;
     left:  0px;	
     right: 0px;
-
 }
 
 #navegador.flex-container{
@@ -57,7 +56,6 @@ body {
 	border: 1px solid white;
 	border-radius: 10%;
 }
-
 
 .nav-hide{
 	visibility: hidden;
@@ -146,10 +144,41 @@ body {
 	height: 300px;
     position: absolute;
     margin: 0;
-    top: 150px;
+    top: 130px;
     padding: 60px 65px;
 	justify-content: flex-end;
 }
+
+/* SIGN UP */
+.sign-up-click{
+	background-color: white;
+	width: 400px;
+	height: 440px;
+    position: absolute;
+    margin: 0;
+    top: 130px;
+    padding: 60px 65px;
+	justify-content: flex-end;
+}
+
+#error1{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	bottom: 100px;
+	left: 410px;	
+}
+
+#error1 img{
+	width: 20px;
+	height: 20px;
+}
+
+#input-error{
+	border-bottom: 2px solid rgb(127,0,127);
+}
+
+/*----------*/
 
 .titulo-sign-up h1{
 	font-size: 50px;
@@ -169,7 +198,7 @@ body {
 }
 
 
-.sign-up input{
+.formulario{
 	width: 400px;
 	height: 20px;
 	margin: 0 0 30px 0;
@@ -182,14 +211,17 @@ body {
 	bottom: 60px;
 }
 
-.sign-up input:focus {
+.formulario:focus {
 	outline: 0;
     box-shadow: none;
-   	border-bottom: 3px solid rgb(127,0,127);
+   	border-bottom: 2px solid #7F7F7F;
    	opacity: 0.5;	
 }
 
- [placeholder="Phone Number"]{
+ [placeholder="Phone Number"],
+ [placeholder="Name"],
+ [placeholder="Email"],
+ [placeholder="City"]{
 	opacity: 0.4;
 	font-size: 1.2em;
 }
@@ -231,6 +263,12 @@ body {
 	text-decoration: none;
 }
 
+
+
+
+
+
+
 /*------- SECTION RIDE -------*/
 
 #ride {
@@ -264,17 +302,85 @@ body {
 .img-ride{
 	width: 550px;
 	height: 700px;
-	overflow: hidden;
-	transform: translateY(-10%);	
+	overflow: hidden;	
 	position: relative;
 	left: 80px;
+
 }
 
 .img-ride img{
-	width: 500px;
+	width: 480px;
 
 }
 
+/*------- SECTION WATCH -------*/
+#watch.flex-container{
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0 0 0 20px;
+	height: 480px;	
+}
+
+.amplifly-ride{
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+
+/*------- SECTION WATCH JUNE -------*/
+#watch-june.flex-container{
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0;
+	height: 480px;	
+}
+
+.june{
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+
+
+/*------- ROUND UP -------*/
+
+#round-up.flex-container{
+	flex-direction: row;
+	justify-content: center;
+}	
+
+.learn-more{
+	width: 400px;
+	background-color: white;
+	padding: 100px 40px;
+	position: relative;
+	box-sizing: inherit;
+	font-size: 1.15em;
+}
+
+.learn-more a{
+	text-decoration: none;
+	color: #FC00B5;
+
+}
+
+#video-round-up{
+	width: 853px;
+	height: 480px;	
+}
+
+
+/*------- PRODCUT NEW -------*/
 
 
 
