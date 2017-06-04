@@ -4,7 +4,7 @@ function resizeHeaderOnScroll() {
   window.pageYOffset:  devuelve los píxeles del documento actual.
   scrollTop : devuelve el número de píxeles contenido de un elemento se desplaza verticalmente.
   */
-  var limite = 250;
+  var limite = 150;
   var elNav = document.getElementById('navegador'); 
   var elHide = document.getElementById('a-hide');
   var lasA = Array.from(document.getElementsByClassName('estilo-a'));

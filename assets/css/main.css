@@ -234,10 +234,183 @@ body {
 /*------- SECTION RIDE -------*/
 
 #ride {
-	width: 100%;
+	width: auto;
 	height: 500px;
 	background: linear-gradient(rgb(127,0,127),#2b1e66);
+	padding: 0 40px 0 100px;
+}
+
+#ride.flex-container{
+	flex-direction: row;	
+}
+
+.text-ride{
+	color: white;
+	font-size: 1.15em;
+	
+}
+
+.text-ride p{
+	font-weight: 300;	
+	position: relative;
+	bottom: 20px;
+}
+
+.in-minute, .about-safety, .happy{
+	padding: 0 0 10px 30px;
+}
+
+
+.img-ride{
+	width: 550px;
+	height: 700px;
+	overflow: hidden;
+	transform: translateY(-10%);	
+	position: relative;
+	left: 80px;
+}
+
+.img-ride img{
+	width: 500px;
 
 }
+
+
+
+
+
+
+
+
+/*------- FOOTER -------*/
+
+footer{
+  text-align: center;
+  width: auto;
+  height: 600px;
+  background-color: #373b47;
+  color: white;
+  padding: 40px 20px;
+}
+
+#pre-footer.flex-container{
+	flex-direction: row;
+	justify-content: space-around;
+	justify-content: flex-start;	
+}
+
+
+div.flex-container{
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding: 0 20px 10px 40px;
+}
+
+.link-principal{
+	color: #F0F0F2;
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-decoration: none;
+}
+
+.link-principal:hover{
+	text-decoration: underline;
+	text-decoration-color: #FC00B5;
+}
+
+
+.osc{
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-decoration: none;
+	color: #B1BAD1;
+	margin: 0;
+}
+
+
+.link-segundarios{
+	color: #E9F0F2;
+	font-weight: 300;
+	padding-bottom: 20px;	
+	text-decoration: none;	
+}
+
+.link-segundarios:hover, .derechos a:hover{
+	color: #FC00B5;
+	text-decoration: underline;
+	text-decoration-color: #FC00B5;
+}
+
+
+.link-logos-footer{
+	width: 15%;
+	align-items: right;
+	overflow: hidden;
+	margin-left: auto;
+	justify-content: right;	
+}
+
+.link-logos-footer a{
+	margin-bottom: 20px;
+}
+
+.link-logos-footer img{
+	width: 150px;
+}
+
+#footer-redes.flex-container{
+	flex-direction: column;
+	align-items: center;
+	margin: 70px 0 30px 0;
+
+}
+
+div.footer.flex-container{
+	flex-direction: row;	
+	justify-content: center;
+}
+
+.redes-sociales div{
+	margin: 0 20px;
+}
+
+.circulo{
+	border: 1px solid white;
+	border-radius: 50px;
+	width: 25px;
+	height: 25px;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+
+.fa-facebook{
+	position: relative;
+	left: 3px;
+}
+
+.circulo .fa{
+	color: white;
+}
+
+.redes-sociales{
+	padding-bottom: 10px 40px;
+}
+
+.el-hr{
+	width: 600px;
+}
+
+.derechos, .derechos a{
+	font-weight: 300;
+	font-size: 0.95em;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
 
 
