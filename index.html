@@ -28,15 +28,28 @@
 		</video>
 		<div id="mascara"></div>
 
-		<div id="el-sign-up" class="sign-up">
+		<div id="el-sign-up" class="sign-up">	
 			<div class="titulo-sign-up">
 				<h1>TURN MILES<br> INTO MONEY</h1>
 				<p>SIGN UP TO DRIVE WITH LYFT.</p>
-			</div>			
-			<input type="text" id="phone" class="formulario" placeholder="Phone Number"><span id="error1" class="error"></span>
-			<input type="text" id="name" class="formulario hide " placeholder="Name"><span id="error1" class="error"></span>
-			<input type="text" id="email" class="formulario hide" placeholder="Email"><span id="error1" class="error"></span>
-			<input type="text" id="city" class="formulario hide" placeholder="City"><span id="error1" class="error hide"><img src="assets/img/error.png" alt=""></span>
+			</div>	
+			<form class="form-signup" novalidate>
+				<div class="phone-container input-box">		
+					<input type="text" id="phone" class="formulario" placeholder="Phone Number">
+				</div>	
+				<div id="form-phone"  class="name-container input-box">
+					<input type="text" id="phone-f" class="formulario hide" placeholder="Phone Number">
+				</div>
+				<div class="name-container input-box">
+					<input type="text" id="name" class="formulario hide" placeholder="Name">
+				</div>
+				<div class="email-container input-box">
+					<input type="text" id="email" class="formulario hide" placeholder="Email">
+				</div>
+				<div class="city-container input-box">
+					<input type="text" id="city" class="formulario hide" placeholder="City">
+				</div>
+			</form>
 			<div class="btn-sign-up">
 				<a href="#" id="btn-click" class="btn-drive">Become a Driver</a>
 				<a href="#" class="btn-ride">Sign Up to Ride</a>

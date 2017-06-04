@@ -85,14 +85,14 @@ body {
 	display: inline-block;
 	padding: 20px 40px;
 	text-decoration: none;
-	color: #3F3F3F;
+	color: #728099;
 	font-size: 1.2em;
 	margin-left: 10px;
 }
 
 .nav-especial-scroll{
 	padding: 10px 20px;
-	border: 1px solid #3F3F3F;
+	border: 1px solid #728099;
 	border-radius: 10%;
 }
 
@@ -153,29 +153,12 @@ body {
 .sign-up-click{
 	background-color: white;
 	width: 400px;
-	height: 440px;
+	height: 450px;
     position: absolute;
     margin: 0;
     top: 130px;
     padding: 60px 65px;
 	justify-content: flex-end;
-}
-
-#error1{
-	width: 10px;
-	height: 10px;
-	position: relative;
-	bottom: 100px;
-	left: 410px;	
-}
-
-#error1 img{
-	width: 20px;
-	height: 20px;
-}
-
-#input-error{
-	border-bottom: 2px solid rgb(127,0,127);
 }
 
 /*----------*/
@@ -199,7 +182,7 @@ body {
 
 
 .formulario{
-	width: 400px;
+	width: 350px;
 	height: 20px;
 	margin: 0 0 30px 0;
     background: white;
@@ -225,6 +208,43 @@ body {
 	opacity: 0.4;
 	font-size: 1.2em;
 }
+
+
+/* Valida Error */
+
+.error1{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	bottom: 60px;	
+}
+
+.error1 img{
+	width: 20px;
+	height: 20px;
+}
+
+.input-error{
+	width: 350px;
+	height: 20px;
+	margin: 0 0 30px 0;
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    position: relative;
+	bottom: 60px;
+	border-bottom: 3px solid rgb(127,0,127);
+}
+
+.input-error:focus{
+	outline: 0;
+    box-shadow: none;
+   	border-bottom: 2px solid #7F7F7F;
+   	opacity: 0.5;	
+}
+
+/*----------*/
 
 .btn-sign-up{
 	margin: 10px 0;
@@ -394,7 +414,7 @@ footer{
   text-align: center;
   width: auto;
   height: 600px;
-  background-color: #373b47;
+  background-color: #333447;
   color: white;
   padding: 40px 20px;
 }
